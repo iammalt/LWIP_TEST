@@ -1,0 +1,261 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1231313 27925, 123123132113, LIC=9WSKC-7L7B2-TGZ7T-RRZ5J-Z5PI5-RKTTA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.17
+Toolchain Path:  D:\Program Files\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      Segger\JL2CM3.dll V2.99.16.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+F:\Git Repo\LWIP_TEST\FreeRTOS  LWIP  TEST\网络实验1 LWIP无操作系统移植--移植完成参考\网络实验1 LWIP无操作系统移植\USER\ENC28J60.uvprojx
+Project File Date:  01/05/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'ENC28J60'
+assembling startup_stm32f10x_md.s...
+compiling core_cm3.c...
+compiling misc.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_rcc.c...
+compiling main.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling delay.c...
+compiling stm32f10x_gpio.c...
+compiling usart.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_fsmc.c...
+compiling sys.c...
+compiling spi.c...
+compiling led.c...
+compiling timer.c...
+compiling key.c...
+compiling usmart.c...
+compiling enc28j60.c...
+compiling lcd.c...
+compiling etharp.c...
+compiling autoip.c...
+compiling usmart_str.c...
+compiling icmp.c...
+compiling malloc.c...
+compiling usmart_config.c...
+compiling igmp.c...
+compiling inet.c...
+compiling lwip_comm.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip_app\lwip_comm\lwip_comm.c: 0 warnings, 4 errors
+compiling ethernetif.c...
+compiling ip_addr.c...
+compiling def.c...
+compiling inet_chksum.c...
+compiling ip.c...
+compiling ip_frag.c...
+compiling dns.c...
+compiling dhcp.c...
+compiling init.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\core\init.c(137): error:  #35: #error directive: "If you want to use Socket API, you have to define LWIP_NETCONN=1 in your lwipopts.h"
+    #error "If you want to use Socket API, you have to define LWIP_NETCONN=1 in your lwipopts.h"
+..\LWIP\lwip-1.4.1\src\core\init.c: 0 warnings, 5 errors
+compiling lwip_sys.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\core\lwip_sys.c: 0 warnings, 4 errors
+compiling mem.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\core\mem.c: 0 warnings, 4 errors
+compiling pbuf.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\core\pbuf.c: 0 warnings, 4 errors
+compiling memp.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\core\memp.c: 0 warnings, 4 errors
+compiling netif.c...
+compiling raw.c...
+compiling stats.c...
+compiling tcp.c...
+compiling tcp_in.c...
+compiling tcp_out.c...
+compiling api_lib.c...
+compiling api_msg.c...
+compiling udp.c...
+compiling timers.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\core\timers.c: 0 warnings, 4 errors
+compiling err.c...
+compiling netbuf.c...
+compiling netdb.c...
+compiling netifapi.c...
+compiling sockets.c...
+..\LWIP\lwip-1.4.1\src\api\sockets.c(47): error:  #5: cannot open source input file "lwip/sys.h": No such file or directory
+  #include "lwip/sys.h"
+..\LWIP\lwip-1.4.1\src\api\sockets.c: 0 warnings, 1 error
+compiling sys_arch.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\arch\sys_arch.c(53): warning:  #223-D: function "mymalloc" declared implicitly
+  (*mbox)=mymalloc(SRAMIN,sizeof(TQ_DESCR)); //为??息?????????诖?
+..\LWIP\arch\sys_arch.c(53): error:  #20: identifier "SRAMIN" is undefined
+  (*mbox)=mymalloc(SRAMIN,sizeof(TQ_DESCR)); //为??息?????????诖?
+..\LWIP\arch\sys_arch.c(53): error:  #513: a value of type "int" cannot be assigned to an entity of type "sys_mbox_t"
+  (*mbox)=mymalloc(SRAMIN,sizeof(TQ_DESCR)); //为??息?????????诖?
+..\LWIP\arch\sys_arch.c(54): warning:  #223-D: function "mymemset" declared implicitly
+  mymemset((*mbox),0,sizeof(TQ_DESCR)); //?宄? mbox ???诖?
+..\LWIP\arch\sys_arch.c(60): warning:  #223-D: function "OSQCreate" declared implicitly
+  (*mbox)->pQ=OSQCreate(&((*mbox)->pvQEntries[0]),size);
+..\LWIP\arch\sys_arch.c(60): error:  #513: a value of type "int" cannot be assigned to an entity of type "<error-type> *"
+  (*mbox)->pQ=OSQCreate(&((*mbox)->pvQEntries[0]),size);
+..\LWIP\arch\sys_arch.c(66): warning:  #223-D: function "myfree" declared implicitly
+  myfree(SRAMIN,(*mbox));
+..\LWIP\arch\sys_arch.c(77): warning:  #223-D: function "OSQDel" declared implicitly
+  (void)OSQDel(m_box->pQ,OS_DEL_ALWAYS,&ucErr);
+..\LWIP\arch\sys_arch.c(77): error:  #20: identifier "OS_DEL_ALWAYS" is undefined
+  (void)OSQDel(m_box->pQ,OS_DEL_ALWAYS,&ucErr);
+..\LWIP\arch\sys_arch.c(78): error:  #20: identifier "OS_ERR_NONE" is undefined
+  
+WIP_ASSERT( "OSQDel ",ucErr == OS_ERR_NONE );
+..\LWIP\arch\sys_arch.c(79): warning:  #223-D: function "myfree" declared implicitly
+  myfree(SRAMIN,m_box);
+..\LWIP\arch\sys_arch.c(79): error:  #20: identifier "SRAMIN" is undefined
+  myfree(SRAMIN,m_box);
+..\LWIP\arch\sys_arch.c(88): error:  #20: identifier "pvNullPointer" is undefined
+  if(msg==
+ULL)msg=(void*)&pvNullPointer;
+..\LWIP\arch\sys_arch.c(89): warning:  #223-D: function "OSQPost" declared implicitly
+  while(OSQPost((*mbox)->pQ,msg)!=OS_ERR_NONE);//??循环?却???息发?统晒?
+..\LWIP\arch\sys_arch.c(89): error:  #20: identifier "OS_ERR_NONE" is undefined
+  while(OSQPost((*mbox)->pQ,msg)!=OS_ERR_NONE);//??循环?却???息发?统晒?
+..\LWIP\arch\sys_arch.c(101): error:  #20: identifier "pvNullPointer" is undefined
+  if(msg==
+ULL)msg=(void*)&pvNullPointer;
+..\LWIP\arch\sys_arch.c(102): warning:  #223-D: function "OSQPost" declared implicitly
+  if((OSQPost((*mbox)->pQ, msg))!=OS_ERR_NONE)return ERR_MEM;
+..\LWIP\arch\sys_arch.c(102): error:  #20: identifier "OS_ERR_NONE" is undefined
+  if((OSQPost((*mbox)->pQ, msg))!=OS_ERR_NONE)return ERR_MEM;
+..\LWIP\arch\sys_arch.c(120): error:  #20: identifier "OS_TICKS_PER_SEC" is undefined
+  ucos_timeout=(timeout*OS_TICKS_PER_SEC)/1000;
+..\LWIP\arch\sys_arch.c(123): warning:  #223-D: function "OSTimeGet" declared implicitly
+  timeout = OSTimeGet(); //??取系统时??
+..\LWIP\arch\sys_arch.c(125): warning:  #223-D: function "OSQPend" declared implicitly
+  temp=OSQPend(m_box->pQ,(u16_t)ucos_timeout,&ucErr);
+..\LWIP\arch\sys_arch.c(125): error:  #513: a value of type "int" cannot be assigned to an entity of type "void *"
+  temp=OSQPend(m_box->pQ,(u16_t)ucos_timeout,&ucErr);
+..\LWIP\arch\sys_arch.c(130): error:  #20: identifier "pvNullPointer" is undefined
+  if(temp==(void*)&pvNullPointer)*msg = NULL;
+..\LWIP\arch\sys_arch.c(133): error:  #20: identifier "OS_ERR_TIMEOUT" is undefined
+  if(ucErr==OS_ERR_TIMEOUT)timeout=SYS_ARCH_TIMEOUT; //???蟪?时
+..\LWIP\arch\sys_arch.c(136): error:  #20: identifier "OS_ERR_NONE" is undefined
+  
+WIP_ASSERT("OSQPend ",ucErr==OS_ERR_NONE);
+..\LWIP\arch\sys_arch.c(141): error:  #20: identifier "OS_TICKS_PER_SEC" is undefined
+  timeout=timeout_new*1000/OS_TICKS_PER_SEC + 1;
+..\LWIP\arch\sys_arch.c(163): error:  #20: identifier "OS_Q_DATA" is undefined
+  OS_Q_DATA q_data;
+..\LWIP\arch\sys_arch.c(164): warning:  #223-D: function "memset" declared implicitly
+  memset(&q_data,0,sizeof(OS_Q_DATA));
+..\LWIP\arch\sys_arch.c(164): error:  #20: identifier "OS_Q_DATA" is undefined
+  memset(&q_data,0,sizeof(OS_Q_DATA));
+..\LWIP\arch\sys_arch.c(165): warning:  #223-D: function "OSQQuery" declared implicitly
+  ucErr=OSQQuery (m_box->pQ,&q_data);
+..\LWIP\arch\sys_arch.c: 12 warnings, 22 errors
+compiling tcpip.c...
+..\LWIP\arch/sys_arch.h(48): error:  #20: identifier "OS_EVENT" is undefined
+  OS_EVENT* pQ; //UCOS ??指???录??瓶榈?指??
+..\LWIP\arch/sys_arch.h(53): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_sem_t; //LWIP 使?玫??藕?量
+..\LWIP\arch/sys_arch.h(54): error:  #20: identifier "OS_EVENT" is undefined
+  typedef OS_EVENT *sys_mutex_t; //LWIP 使?玫幕コ??藕?量
+..\LWIP\arch/sys_arch.h(57): error:  #20: identifier "INT8U" is undefined
+  typedef INT8U sys_thread_t; //?叱? ID,也???????????燃?
+..\LWIP\lwip-1.4.1\src\api\tcpip.c: 0 warnings, 4 errors
+compiling croutine.c...
+compiling list.c...
+compiling event_groups.c...
+compiling queue.c...
+compiling tasks.c...
+compiling heap_4.c...
+compiling timers.c...
+compiling port.c...
+"..\OBJ\NRF24L01.axf" - 56 Error(s), 12 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\Git Repo\LWIP_TEST\FreeRTOS  LWIP  TEST\网络实验1 LWIP无操作系统移植--移植完成参考\网络实验1 LWIP无操作系统移植\USER\RTE
+  D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
